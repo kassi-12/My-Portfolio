@@ -1,14 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
 
 
 /*-----------------------------------*\
@@ -205,6 +194,34 @@ article {
   border-radius: inherit;
   z-index: -1;
 }
+/* Default styles for sidebar and article */
+.sidebar,
+article {
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+/* Add a media query for screens with a maximum width of 768px (typical for phones) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    /* Adjust the width of the sidebar for phone mode */
+    width: 100%;
+    max-width: 100%; /* Ensure it takes up the full width */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  article {
+    /* Adjust the width of the main content for phone mode */
+    width: 100%;
+    max-width: 100%; /* Ensure it takes up the full width */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
 
 /* Style for the resume note marker */
 .resume-note {
