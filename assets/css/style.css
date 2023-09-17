@@ -195,6 +195,7 @@ article {
   z-index: -1;
 }
 /* Default styles for sidebar and article */
+/* Default styles for sidebar and article */
 .sidebar,
 article {
   background: var(--eerie-black-2);
@@ -207,18 +208,16 @@ article {
 
 /* Add a media query for screens with a maximum width of 768px (typical for phones) */
 @media screen and (max-width: 768px) {
+  /* Make sure to reset any previously defined width or padding */
   .sidebar {
-    /* Adjust the width of the sidebar for phone mode */
     width: 100%;
-    max-width: 100%; /* Ensure it takes up the full width */
-    padding: 10px; /* Reduce padding for smaller screens */
+    max-width: 100%;
+    padding: 15px; /* You can adjust this padding as needed */
   }
-
   article {
-    /* Adjust the width of the main content for phone mode */
     width: 100%;
-    max-width: 100%; /* Ensure it takes up the full width */
-    padding: 10px; /* Reduce padding for smaller screens */
+    max-width: 100%;
+    padding: 15px; /* You can adjust this padding as needed */
   }
 }
 
